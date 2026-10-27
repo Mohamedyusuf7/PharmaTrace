@@ -1,0 +1,10 @@
+{
+  "name": "aegis-pharma-ebr-system",
+  "version": "1.0.0",
+  "description": "AegisPharma™ - 21 CFR Part 11 Electronic Batch Record & Manufacturing Execution System",
+  "scripts": {
+    "server": "cd server && node index.js",
+    "client": "cd client && npm run dev",
+    "start": "node -e \"console.log('Use npm run server and npm run client')\""
+  }
+}

@@ -1,0 +1,639 @@
+{
+  "users": [
+    {
+      "id": "USR-OP-01",
+      "username": "operator_alex",
+      "fullName": "Alex Mercer",
+      "email": "alex.mercer@aegispharma.com",
+      "role": "OPERATOR",
+      "department": "Solid Dosage Manufacturing",
+      "employeeId": "EMP-9042",
+      "passwordHash": "$2a$10$/sIf9i0Xl9rkdvZ01f3aYOpQG.zrM.vNG7sOVi649c7z66tIuQKZK",
+      "pinHash": "$2a$10$/sIf9i0Xl9rkdvZ01f3aYOBq1pgEzBOnyB6p1Izji1091BA4baI0e",
+      "active": true,
+      "createdAt": "2026-10-26T14:32:27.083Z"
+    },
+    {
+      "id": "USR-QA-01",
+      "username": "qa_dr_elena",
+      "fullName": "Dr. Elena Rostova",
+      "email": "elena.rostova@aegispharma.com",
+      "role": "QA_QC_MANAGER",
+      "department": "Quality Assurance & Regulatory Compliance",
+      "employeeId": "EMP-4108",
+      "passwordHash": "$2a$10$/sIf9i0Xl9rkdvZ01f3aYOpQG.zrM.vNG7sOVi649c7z66tIuQKZK",
+      "pinHash": "$2a$10$/sIf9i0Xl9rkdvZ01f3aYOBq1pgEzBOnyB6p1Izji1091BA4baI0e",
+      "active": true,
+      "createdAt": "2026-10-26T14:32:27.085Z"
+    },
+    {
+      "id": "USR-AUD-01",
+      "username": "auditor_david",
+      "fullName": "David Vance, RAC",
+      "email": "david.vance@fda-inspection.gov",
+      "role": "AUDITOR",
+      "department": "FDA / Regulatory External Audit",
+      "employeeId": "AUD-7721",
+      "passwordHash": "$2a$10$/sIf9i0Xl9rkdvZ01f3aYOpQG.zrM.vNG7sOVi649c7z66tIuQKZK",
+      "pinHash": "$2a$10$/sIf9i0Xl9rkdvZ01f3aYOBq1pgEzBOnyB6p1Izji1091BA4baI0e",
+      "active": true,
+      "createdAt": "2026-10-26T14:32:27.085Z"
+    },
+    {
+      "id": "USR-ADM-01",
+      "username": "admin_sarah",
+      "fullName": "Sarah Chen",
+      "email": "sarah.chen@aegispharma.com",
+      "role": "ADMIN",
+      "department": "Manufacturing IT & Automation Systems",
+      "employeeId": "EMP-1001",
+      "passwordHash": "$2a$10$/sIf9i0Xl9rkdvZ01f3aYOpQG.zrM.vNG7sOVi649c7z66tIuQKZK",
+      "pinHash": "$2a$10$/sIf9i0Xl9rkdvZ01f3aYOBq1pgEzBOnyB6p1Izji1091BA4baI0e",
+      "active": true,
+      "createdAt": "2026-10-26T14:32:27.085Z"
+    }
+  ],
+  "materials": [
+    {
+      "id": "MAT-PCM-API-01",
+      "materialCode": "API-PCM-01",
+      "name": "Paracetamol Active Pharmaceutical Ingredient (USP)",
+      "category": "API",
+      "lotNumber": "LOT-PCM-2025-089",
+      "vendor": "Novartis Chemicals Ltd",
+      "quantity": 250,
+      "allocatedQuantity": 50,
+      "unit": "kg",
+      "receivedDate": "2025-10-15",
+      "expiryDate": "2028-03-09",
+      "status": "RELEASED",
+      "coaNumber": "COA-NOV-88129",
+      "storageCondition": "Store below 25°C in a dry place",
+      "testedBy": "Dr. Elena Rostova",
+      "releasedBy": "Dr. Elena Rostova",
+      "releaseTimestamp": "2026-10-26T14:32:27.086Z",
+      "releaseSignature": "SIG-RELEASED-PCM-01",
+      "notes": "Passed USP Monograph assay & purity check. Cleared for production."
+    },
+    {
+      "id": "MAT-MCC-EXC-02",
+      "materialCode": "EXC-MCC-02",
+      "name": "Microcrystalline Cellulose PH-102",
+      "category": "Excipient",
+      "lotNumber": "LOT-MCC-2025-412",
+      "vendor": "FMC BioPolymer",
+      "quantity": 120,
+      "allocatedQuantity": 18.5,
+      "unit": "kg",
+      "receivedDate": "2025-11-01",
+      "expiryDate": "2028-10-15",
+      "status": "RELEASED",
+      "coaNumber": "COA-FMC-9901",
+      "storageCondition": "Controlled Room Temperature",
+      "testedBy": "Dr. Elena Rostova",
+      "releasedBy": "Dr. Elena Rostova",
+      "releaseTimestamp": "2026-10-26T14:32:27.086Z",
+      "releaseSignature": "SIG-RELEASED-MCC-02",
+      "notes": "Particle size distribution and loss on drying within specifications."
+    },
+    {
+      "id": "MAT-EXP-AMX-09",
+      "materialCode": "API-AMX-01",
+      "name": "Amoxicillin Trihydrate Micronized (EXPIRED DEMO)",
+      "category": "API",
+      "lotNumber": "LOT-AMX-2023-004",
+      "vendor": "DSM Sinochem Pharmaceuticals",
+      "quantity": 45,
+      "allocatedQuantity": 0,
+      "unit": "kg",
+      "receivedDate": "2023-01-10",
+      "expiryDate": "2026-09-16",
+      "status": "REJECTED",
+      "coaNumber": "COA-DSM-2023-41",
+      "storageCondition": "Refrigerated 2-8°C",
+      "testedBy": "Dr. Elena Rostova",
+      "releasedBy": "Dr. Elena Rostova",
+      "releaseTimestamp": "2026-10-26T14:32:27.086Z",
+      "releaseSignature": "SIG-REJECTED-EXP-09",
+      "notes": "AUTOMATED EXpiry SYSTEM: Reached end of shelf life. Quarantine lock active, prohibited for production dispensing."
+    },
+    {
+      "id": "MAT-QUA-MGST-04",
+      "materialCode": "EXC-MGST-04",
+      "name": "Magnesium Stearate Lubricant (QUARANTINE DEMO)",
+      "category": "Excipient",
+      "lotNumber": "LOT-MGST-2026-901",
+      "vendor": "Peter Greven Pharma",
+      "quantity": 80,
+      "allocatedQuantity": 0,
+      "unit": "kg",
+      "receivedDate": "2026-10-26",
+      "expiryDate": "2028-10-15",
+      "status": "QUARANTINE",
+      "coaNumber": "COA-IN-MGST-901",
+      "storageCondition": "Store in cool dry place",
+      "testedBy": null,
+      "releasedBy": null,
+      "releaseTimestamp": null,
+      "releaseSignature": null,
+      "notes": "Newly received warehouse shipment. Awaiting laboratory microbial assay & heavy metals testing."
+    }
+  ],
+  "formulations": [
+    {
+      "id": "FORM-PCM-500",
+      "drugCode": "PCM-500-TAB",
+      "drugName": "Paracetamol Extended Release",
+      "dosageForm": "Tablet",
+      "strength": "500 mg",
+      "targetBatchSize": 100000,
+      "unit": "Tablets",
+      "shelfLifeMonths": 36,
+      "storageCondition": "Store below 25°C in a dry place",
+      "bom": [
+        {
+          "materialCode": "API-PCM-01",
+          "materialName": "Paracetamol Active Pharmaceutical Ingredient (USP)",
+          "requiredQty": 50,
+          "unit": "kg"
+        },
+        {
+          "materialCode": "EXC-MCC-02",
+          "materialName": "Microcrystalline Cellulose PH-102",
+          "requiredQty": 18.5,
+          "unit": "kg"
+        },
+        {
+          "materialCode": "EXC-PVP-03",
+          "materialName": "Povidone K-30 Binder",
+          "requiredQty": 3.2,
+          "unit": "kg"
+        },
+        {
+          "materialCode": "EXC-MGST-04",
+          "materialName": "Magnesium Stearate Lubricant",
+          "requiredQty": 0.8,
+          "unit": "kg"
+        },
+        {
+          "materialCode": "COAT-OPD-05",
+          "materialName": "Opadry White Film Coating Premix",
+          "requiredQty": 2.5,
+          "unit": "kg"
+        }
+      ],
+      "stages": [
+        {
+          "stepNumber": 1,
+          "name": "Dispensing & Raw Material Verification",
+          "description": "Verify quarantine release stickers, scan lot barcodes, and dispense exact API and excipients inside Cleanroom ISO-8.",
+          "equipmentType": "High-Precision Floor Scale FS-901",
+          "standardParams": [
+            {
+              "name": "Cleanroom Temperature",
+              "unit": "°C",
+              "target": 21,
+              "min": 18,
+              "max": 24
+            },
+            {
+              "name": "Cleanroom Relative Humidity",
+              "unit": "% RH",
+              "target": 45,
+              "min": 35,
+              "max": 55
+            },
+            {
+              "name": "Dispensing Scale Calibration Check",
+              "unit": "Status",
+              "target": 1,
+              "min": 1,
+              "max": 1
+            }
+          ],
+          "qaSignOffRequired": true
+        },
+        {
+          "stepNumber": 2,
+          "name": "Granulation & Fluidized Bed Drying",
+          "description": "Dry-mix API and excipients, add binder solution, granulate in High Shear Mixer and dry to target Loss-On-Drying (LOD).",
+          "equipmentType": "Glatt Fluid Bed Dryer FBD-400",
+          "standardParams": [
+            {
+              "name": "Impeller Speed",
+              "unit": "RPM",
+              "target": 350,
+              "min": 320,
+              "max": 380
+            },
+            {
+              "name": "Inlet Air Temperature",
+              "unit": "°C",
+              "target": 62,
+              "min": 58,
+              "max": 66
+            },
+            {
+              "name": "Exhaust Air Temperature",
+              "unit": "°C",
+              "target": 41.5,
+              "min": 38,
+              "max": 45
+            },
+            {
+              "name": "Granule Loss on Drying (LOD)",
+              "unit": "%",
+              "target": 1.8,
+              "min": 1.2,
+              "max": 2.4
+            }
+          ],
+          "qaSignOffRequired": true
+        },
+        {
+          "stepNumber": 3,
+          "name": "Compression / Tableting",
+          "description": "Compress blended granules into bi-convex tablets with target hardness, friability, and uniform thickness.",
+          "equipmentType": "Fette 3090 Rotary Tablet Press",
+          "standardParams": [
+            {
+              "name": "Main Compression Force",
+              "unit": "kN",
+              "target": 18.5,
+              "min": 16,
+              "max": 22
+            },
+            {
+              "name": "Turret Speed",
+              "unit": "RPM",
+              "target": 45,
+              "min": 40,
+              "max": 50
+            },
+            {
+              "name": "Tablet Average Weight",
+              "unit": "mg",
+              "target": 750,
+              "min": 720,
+              "max": 780
+            },
+            {
+              "name": "Tablet Hardness",
+              "unit": "kp",
+              "target": 12,
+              "min": 9.5,
+              "max": 14.5
+            }
+          ],
+          "qaSignOffRequired": true
+        },
+        {
+          "stepNumber": 4,
+          "name": "Aqueous Film Coating",
+          "description": "Apply Opadry protective film coating in perforated pan coater with controlled spray rate and bed temperature.",
+          "equipmentType": "Thomas Engineering Accela-Cota 48",
+          "standardParams": [
+            {
+              "name": "Tablet Bed Temperature",
+              "unit": "°C",
+              "target": 44,
+              "min": 41,
+              "max": 47
+            },
+            {
+              "name": "Spray Rate",
+              "unit": "g/min",
+              "target": 165,
+              "min": 150,
+              "max": 180
+            },
+            {
+              "name": "Atomization Air Pressure",
+              "unit": "bar",
+              "target": 2.8,
+              "min": 2.5,
+              "max": 3.2
+            },
+            {
+              "name": "Weight Gain",
+              "unit": "%",
+              "target": 3,
+              "min": 2.6,
+              "max": 3.4
+            }
+          ],
+          "qaSignOffRequired": true
+        },
+        {
+          "stepNumber": 5,
+          "name": "Primary Blister Packaging & Labeling",
+          "description": "Package coated tablets into Alu-Alu blister strips with automated vision inspection for missing tablets and lot code print.",
+          "equipmentType": "Uhlmann UPS-4 Blister Line",
+          "standardParams": [
+            {
+              "name": "Sealing Temperature",
+              "unit": "°C",
+              "target": 155,
+              "min": 148,
+              "max": 162
+            },
+            {
+              "name": "Forming Air Pressure",
+              "unit": "bar",
+              "target": 6,
+              "min": 5.5,
+              "max": 6.5
+            },
+            {
+              "name": "Vision Camera Rejection Rate",
+              "unit": "%",
+              "target": 0.1,
+              "min": 0,
+              "max": 0.5
+            }
+          ],
+          "qaSignOffRequired": true
+        }
+      ],
+      "specifications": {
+        "purityMin": 98.5,
+        "purityMax": 101.5,
+        "dissolutionMin": 85,
+        "phMin": 5.5,
+        "phMax": 6.5,
+        "microbialLimit": "Passes USP <61>/<62> (< 100 CFU/g)",
+        "hardnessMin": 9,
+        "hardnessMax": 15,
+        "friabilityMax": 0.5
+      }
+    },
+    {
+      "id": "FORM-AMX-250",
+      "drugCode": "AMX-250-CAP",
+      "drugName": "Amoxicillin Trihydrate Capsules",
+      "dosageForm": "Capsule",
+      "strength": "250 mg",
+      "targetBatchSize": 80000,
+      "unit": "Capsules",
+      "shelfLifeMonths": 24,
+      "storageCondition": "Store below 20°C in airtight container",
+      "bom": [
+        {
+          "materialCode": "API-AMX-01",
+          "materialName": "Amoxicillin Trihydrate Powder (USP)",
+          "requiredQty": 23,
+          "unit": "kg"
+        },
+        {
+          "materialCode": "EXC-MCC-02",
+          "materialName": "Microcrystalline Cellulose PH-102",
+          "requiredQty": 8,
+          "unit": "kg"
+        },
+        {
+          "materialCode": "EXC-MGST-04",
+          "materialName": "Magnesium Stearate Lubricant",
+          "requiredQty": 0.4,
+          "unit": "kg"
+        }
+      ],
+      "stages": [
+        {
+          "stepNumber": 1,
+          "name": "Material Dispensing & Weighing",
+          "description": "Dispense micronized Amoxicillin API and excipients under laminar air flow cabinet.",
+          "equipmentType": "Mettler Toledo Scale MT-50",
+          "standardParams": [
+            {
+              "name": "Room Humidity",
+              "unit": "% RH",
+              "target": 35,
+              "min": 25,
+              "max": 40
+            },
+            {
+              "name": "Room Temperature",
+              "unit": "°C",
+              "target": 19.5,
+              "min": 17,
+              "max": 22
+            }
+          ],
+          "qaSignOffRequired": true
+        },
+        {
+          "stepNumber": 2,
+          "name": "V-Cone Powder Blending",
+          "description": "Tumble blend powders to achieve blend uniformity (RSD < 3.0%).",
+          "equipmentType": "Paterson-Kelley V-Blender 150L",
+          "standardParams": [
+            {
+              "name": "Blending Time",
+              "unit": "min",
+              "target": 25,
+              "min": 20,
+              "max": 30
+            },
+            {
+              "name": "Rotation Speed",
+              "unit": "RPM",
+              "target": 22,
+              "min": 20,
+              "max": 24
+            }
+          ],
+          "qaSignOffRequired": true
+        },
+        {
+          "stepNumber": 3,
+          "name": "Capsule Filling & Weight Sorting",
+          "description": "Fill hard gelatin Size 0 capsules with automated 100% checkweighing.",
+          "equipmentType": "Bosch GKF 1400 Capsule Filler",
+          "standardParams": [
+            {
+              "name": "Filling Speed",
+              "unit": "caps/hr",
+              "target": 45000,
+              "min": 40000,
+              "max": 50000
+            },
+            {
+              "name": "Average Fill Weight",
+              "unit": "mg",
+              "target": 390,
+              "min": 375,
+              "max": 405
+            }
+          ],
+          "qaSignOffRequired": true
+        }
+      ],
+      "specifications": {
+        "purityMin": 99,
+        "purityMax": 102,
+        "dissolutionMin": 80,
+        "phMin": 4.8,
+        "phMax": 5.8,
+        "microbialLimit": "Passes USP <61>",
+        "hardnessMin": 0,
+        "hardnessMax": 0,
+        "friabilityMax": 0
+      }
+    }
+  ],
+  "batches": [
+    {
+      "id": "BATCH-PCM-2026-001",
+      "batchNumber": "BCH-2026-9841",
+      "formulationId": "FORM-PCM-500",
+      "drugName": "Paracetamol Extended Release",
+      "dosageForm": "Tablet",
+      "targetYield": 100000,
+      "plannedStartDate": "2026-10-26",
+      "actualStartDate": "2026-10-26T14:32:27.086Z",
+      "actualEndDate": null,
+      "status": "GRANULATION",
+      "previousStatus": "WEIGHING",
+      "activeDeviationHold": false,
+      "currentStageIndex": 1,
+      "allocatedLots": [
+        {
+          "materialCode": "API-PCM-01",
+          "lotNumber": "LOT-PCM-2025-089",
+          "quantityAllocated": 50,
+          "unit": "kg"
+        },
+        {
+          "materialCode": "EXC-MCC-02",
+          "lotNumber": "LOT-MCC-2025-412",
+          "quantityAllocated": 18.5,
+          "unit": "kg"
+        }
+      ],
+      "stageExecutions": [
+        {
+          "stageNumber": 1,
+          "stageName": "Dispensing & Raw Material Verification",
+          "status": "COMPLETED",
+          "operator": "Alex Mercer",
+          "startTime": "2026-10-26T10:32:27.086Z",
+          "endTime": "2026-10-26T12:32:27.086Z",
+          "recordedParams": [
+            {
+              "name": "Cleanroom Temperature",
+              "recordedValue": 20.8,
+              "unit": "°C",
+              "isConforming": true
+            },
+            {
+              "name": "Cleanroom Relative Humidity",
+              "recordedValue": 44.5,
+              "unit": "% RH",
+              "isConforming": true
+            },
+            {
+              "name": "Dispensing Scale Calibration Check",
+              "recordedValue": 1,
+              "unit": "Status",
+              "isConforming": true
+            }
+          ],
+          "qaApproval": {
+            "approvedBy": "Dr. Elena Rostova",
+            "approvedAt": "2026-10-26T12:32:27.086Z",
+            "signatureStamp": "SIG-QA-STEP1-PASS"
+          }
+        },
+        {
+          "stageNumber": 2,
+          "stageName": "Granulation & Fluidized Bed Drying",
+          "status": "IN_PROGRESS",
+          "operator": "Alex Mercer",
+          "startTime": "2026-10-26T13:02:27.086Z",
+          "endTime": null,
+          "recordedParams": [
+            {
+              "name": "Impeller Speed",
+              "recordedValue": 352,
+              "unit": "RPM",
+              "isConforming": true
+            },
+            {
+              "name": "Inlet Air Temperature",
+              "recordedValue": 61.5,
+              "unit": "°C",
+              "isConforming": true
+            },
+            {
+              "name": "Exhaust Air Temperature",
+              "recordedValue": 42,
+              "unit": "°C",
+              "isConforming": true
+            },
+            {
+              "name": "Granule Loss on Drying (LOD)",
+              "recordedValue": 1.85,
+              "unit": "%",
+              "isConforming": true
+            }
+          ],
+          "qaApproval": null
+        }
+      ],
+      "labResults": [],
+      "qaApproval": null,
+      "genealogy": {
+        "rawMaterialLots": [
+          {
+            "materialCode": "API-PCM-01",
+            "name": "Paracetamol Active Pharmaceutical Ingredient (USP)",
+            "lotNumber": "LOT-PCM-2025-089",
+            "vendor": "Novartis Chemicals Ltd"
+          },
+          {
+            "materialCode": "EXC-MCC-02",
+            "name": "Microcrystalline Cellulose PH-102",
+            "lotNumber": "LOT-MCC-2025-412",
+            "vendor": "FMC BioPolymer"
+          }
+        ],
+        "equipmentUsed": [
+          "High-Precision Floor Scale FS-901",
+          "Glatt Fluid Bed Dryer FBD-400"
+        ],
+        "cleanrooms": [
+          "Cleanroom ISO-8 (Granulation Bay 3)"
+        ]
+      },
+      "createdBy": {
+        "id": "USR-OP-01",
+        "name": "Alex Mercer",
+        "role": "OPERATOR"
+      },
+      "createdAt": "2026-10-26T09:32:27.086Z"
+    }
+  ],
+  "deviations": [],
+  "auditLogs": [
+    {
+      "id": "AUD-LOG-GENESIS",
+      "eventId": "EV-0001",
+      "timestamp": "2026-10-26T14:32:27.085Z",
+      "userId": "USR-ADM-01",
+      "username": "System Initialization",
+      "userRole": "ADMIN",
+      "ipAddress": "127.0.0.1",
+      "action": "SYSTEM_INITIALIZED_FRESH",
+      "resourceType": "SYSTEM",
+      "resourceId": "AEGIS-GENESIS",
+      "details": "AegisPharma 21 CFR Part 11 Electronic Batch Record system initialized with clean database state.",
+      "fieldChanged": "SYSTEM_STATE",
+      "oldValue": "UNINITIALIZED",
+      "newValue": "CLEAN_SLATE_ACTIVE",
+      "digitalSignature": "",
+      "prevHash": "GENESIS_BLOCK_HASH_AEGIS_PHARMA_2026",
+      "hash": "c9afc9776bfc94f8e8750bafc040d5d7ba4acc8b0f799a0b4687fd182a5a92df"
+    }
+  ],
+  "digitalSignatures": []
+}
